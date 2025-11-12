@@ -2,7 +2,7 @@
 
 The Skim Tool in effect looks like this:
 
-<img src="assets/demo.png" width="250">
+<img src="assets/demo.png" width="400">
 
 It is Firefox extension that modulates text opacity to highlight only semantically important words in web pages. It uses a local BERT-style (RoBERTa) model, so no "AI-summarization" crap. The content is there, it just becomes easier to skim.
 
