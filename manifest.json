@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Skim Tool",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_title": "Skim Tool",
+    "default_popup": "source/popup.html"
+  },
+  "permissions": ["storage", "activeTab", "tabs"],
+  "background": {
+    "scripts": ["source/background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["source/content_script.js"]
+    }
+  ]
+}
